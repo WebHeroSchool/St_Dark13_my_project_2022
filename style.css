@@ -15,7 +15,7 @@ body {
 .logo {
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/32px pt_serif, Arial, Helvetica, sans-serif;
+    font: bold 24px/32px pt_serifbold, Arial, Helvetica, sans-serif;
     position: relative;
 }
 
