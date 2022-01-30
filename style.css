@@ -46,11 +46,37 @@ body {
 }
 
 .menu__item {
-    padding: 0 12px;
+    margin-right: 24px;
+    font: 500 14px/16px roboto, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: opacity .5s;
+}
+
+.menu__item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    background: #0056EC;
+    width: 0;
+    height: 2px;
+    opacity: 0;
+    transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover {
+    opacity: .5;
+}
+
+.menu__item:hover:after, .menu__item_active:after {
+    opacity: 1;
+    width: 100%;
 }
 
 .menu__item:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .main-content__text {
