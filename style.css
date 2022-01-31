@@ -15,7 +15,7 @@ body {
 .logo {
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/32px pt_serifbold, Arial, Helvetica, sans-serif;
+    font: bold 24px/32px 'pt_serifbold', Arial, Helvetica, sans-serif;
     position: relative;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .menu__item {
     margin-right: 24px;
-    font: 500 14px/16px roboto, Arial, Helvetica, sans-serif;
+    font: 500 14px/16px 'roboto', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #000;
     position: relative;
@@ -79,6 +79,14 @@ body {
     margin-right: 0;
 }
 
+.main-content__title {
+    font: bold 50px/66px 'pt_serifbold', Arial, Helvetica, sans-serif;
+}
+
 .main-content__text {
-    font-family: 'Roboto', sans-serif;
+    font: 500 18px/21px 'roboto', Arial, Helvetica, sans-serif;
+}
+
+.main-content__button {
+    font: 500 14px/16px 'roboto', Arial, Helvetica, sans-serif;
 }
