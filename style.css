@@ -10,6 +10,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .logo {
@@ -79,14 +80,21 @@ body {
     margin-right: 0;
 }
 
-.main-content__title {
+.main {
+    padding: 0 48% 100px 0;
+    background: no-repeat top right url(img/mainImg.svg);
+}
+
+.main__title {
+    margin: 0 0 40px 0;
     font: bold 50px/66px 'pt_serifbold', Arial, Helvetica, sans-serif;
 }
 
-.main-content__text {
+.main__text {
+    margin: 0 0 41px 0;
     font: 500 18px/21px 'roboto', Arial, Helvetica, sans-serif;
 }
 
-.main-content__button {
+.main__button {
     font: 500 14px/16px 'roboto', Arial, Helvetica, sans-serif;
 }
