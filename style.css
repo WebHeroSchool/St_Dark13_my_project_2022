@@ -3,14 +3,14 @@ body {
 }
 
 .wrapper {
-    width: 79%;
+    width: 79.7%;
     margin: auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 133px;
+    margin-bottom: 130px;
 }
 
 .logo {
@@ -44,6 +44,7 @@ body {
 .menu {
     display: flex;
     align-items: center;
+    padding: 2px 6px 0 0;
 }
 
 .menu__item {
@@ -86,11 +87,11 @@ body {
 }
 
 .main__content {
-    padding: 70px 0 0 0;
+    padding: 73px 0 0 0;
 }
 
 .main__title {
-    margin: 0 0 40px 0;
+    margin: 0 0 38px 0;
     font: bold 66px/87px 'pt_serifbold', Arial, Helvetica, sans-serif;
 }
 
@@ -100,6 +101,7 @@ body {
 
 .main__text {
     margin: 0 0 41px 0;
+    padding: 0 120px 0 0;
     font: 500 22px/26px 'roboto', Arial, Helvetica, sans-serif;
 }
 
