@@ -82,8 +82,9 @@ body {
 }
 
 .main {
-    padding: 0 63% 140px 0;
+    padding: 0 63% 135px 0;
     background: no-repeat top right url(img/mainImg.svg);
+    margin-bottom: 133px;
 }
 
 .main__content {
@@ -118,4 +119,31 @@ body {
 
 .main__button:hover {
     opacity: .5;
+}
+
+.wrapper__circle {
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.wrapper__circle, .wrapper__circle::before, .wrapper__circle::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C8DBFB;
+}
+
+.wrapper__circle::before, .wrapper__circle::after {
+    content: '';
+    display: inline;
+    position: absolute;
+}
+
+.wrapper__circle::before{
+    left: -12px;
+}
+
+.wrapper__circle::after {
+    left: 12px;
 }
