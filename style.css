@@ -3,19 +3,20 @@ body {
 }
 
 .wrapper {
-    width: 70%;
+    width: 79.7%;
     margin: auto;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 130px;
 }
 
 .logo {
     padding: 40px 0;
     padding-left: 44px;
-    font: bold 24px/32px pt_serifbold, Arial, Helvetica, sans-serif;
+    font: bold 24px/32px 'pt_serifbold', Arial, Helvetica, sans-serif;
     position: relative;
 }
 
@@ -43,11 +44,12 @@ body {
 .menu {
     display: flex;
     align-items: center;
+    padding: 2px 6px 0 0;
 }
 
 .menu__item {
     margin-right: 24px;
-    font: 500 14px/16px roboto, Arial, Helvetica, sans-serif;
+    font: 500 18px/21px 'roboto', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #000;
     position: relative;
@@ -61,7 +63,7 @@ body {
     left: 0;
     background: #0056EC;
     width: 0;
-    height: 2px;
+    height: 3px;
     opacity: 0;
     transition: opacity .5s, width .5s;
 }
@@ -79,6 +81,69 @@ body {
     margin-right: 0;
 }
 
-.main-content__text {
-    font-family: 'Roboto', sans-serif;
+.main {
+    padding: 0 63% 135px 0;
+    background: no-repeat top right url(img/mainImg.svg);
+    margin-bottom: 133px;
+}
+
+.main__content {
+    padding: 73px 0 0 0;
+}
+
+.main__title {
+    margin: 0 0 38px 0;
+    font: bold 66px/87px 'pt_serifbold', Arial, Helvetica, sans-serif;
+}
+
+.main__title-text_highlight {
+    background: #ECF3FF;
+}
+
+.main__text {
+    margin: 0 0 41px 0;
+    padding: 0 120px 0 0;
+    font: 500 22px/26px 'roboto', Arial, Helvetica, sans-serif;
+}
+
+.main__button {
+    display: inline-block;
+    padding: 18px 21px;
+    background:#0056EC;
+    text-decoration: none;
+    border-radius: 4px;
+    font: 500 18px/21px 'roboto', Arial, Helvetica, sans-serif;
+    color: #fff;
+    transition: opacity .5s;
+}
+
+.main__button:hover {
+    opacity: .5;
+}
+
+.wrapper__circle {
+    position: relative;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.wrapper__circle, .wrapper__circle::before, .wrapper__circle::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C8DBFB;
+}
+
+.wrapper__circle::before, .wrapper__circle::after {
+    content: '';
+    display: inline;
+    position: absolute;
+}
+
+.wrapper__circle::before{
+    left: -12px;
+}
+
+.wrapper__circle::after {
+    left: 12px;
 }
