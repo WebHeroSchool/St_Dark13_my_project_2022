@@ -41,6 +41,10 @@ body {
     opacity: .7;
 }
 
+#checkbox {
+    display: none;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -177,10 +181,6 @@ body {
         visibility: hidden;
     }
 
-    .menu {
-        display: none;
-    }
-
     .header {
         margin-bottom: 0;
     }
@@ -215,5 +215,66 @@ body {
 
     .wrapper__circle {
        display: none;
+    }
+
+    .menu-btn {
+        width: 25px;
+        height: 17px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        cursor: pointer;
+        z-index: 1;
+    }
+      
+      .menu-btn__stripe, 
+      .menu-btn__stripe::before,
+      .menu-btn__stripe::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #0056EC;
+    }
+      
+      .menu-btn__stripe::before {
+        content: '';
+        bottom: 7px;
+    }
+      
+      .menu-btn__stripe::after {
+        content: '';
+        top: 7px;
+    }
+
+    #checkbox:checked ~.menu {
+        visibility: visible;
+        left: 0;
+    }
+      
+      #checkbox:checked ~ .menu-btn > .menu-btn__stripe {
+        transform: rotate(45deg);
+    }
+      
+      #checkbox:checked ~ .menu-btn > .menu-btn__stripe::before {
+        transform: rotate(0deg);
+        bottom: 0;
+    }
+      
+      #checkbox:checked ~ .menu-btn > .menu-btn__stripe::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+      
+      .menu,
+      .menu__item,
+      .menu-btn__stripe, 
+      .menu-btn__stripe::before,
+      .menu-btn__stripe::after {
+        transition-duration: .3s;
+    }
+
+    .menu {
+        display: none;
     }
 }
