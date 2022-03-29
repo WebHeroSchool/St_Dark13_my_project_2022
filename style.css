@@ -158,7 +158,7 @@ body {
 
 /* Медиа-запросы */
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
     .wrapper {
         width: 87.2%;
@@ -228,21 +228,21 @@ body {
         z-index: 2;
     }
       
-      .menu-btn__stripe, 
-      .menu-btn__stripe::before,
-      .menu-btn__stripe::after {
+    .menu-btn__stripe, 
+    .menu-btn__stripe::before,
+    .menu-btn__stripe::after {
         position: absolute;
         width: 100%;
         height: 3px;
         background: #0056EC;
     }
       
-      .menu-btn__stripe::before {
+    .menu-btn__stripe::before {
         content: '';
         bottom: 7px;
     }
       
-      .menu-btn__stripe::after {
+    .menu-btn__stripe::after {
         content: '';
         top: 7px;
     }
@@ -271,24 +271,71 @@ body {
         left: 0;
     }
       
-      #checkbox:checked ~ .menu-btn > .menu-btn__stripe {
+    #checkbox:checked ~ .menu-btn > .menu-btn__stripe {
         transform: rotate(45deg);
     }
       
-      #checkbox:checked ~ .menu-btn > .menu-btn__stripe::before {
+    #checkbox:checked ~ .menu-btn > .menu-btn__stripe::before {
         transform: rotate(0deg);
         bottom: 0;
     }
       
-      #checkbox:checked ~ .menu-btn > .menu-btn__stripe::after {
+    #checkbox:checked ~ .menu-btn > .menu-btn__stripe::after {
         transform: rotate(90deg);
         top: 0;
     }
       
-      .menu,
-      .menu-btn__stripe, 
-      .menu-btn__stripe::before,
-      .menu-btn__stripe::after {
+    .menu,
+    .menu-btn__stripe, 
+    .menu-btn__stripe::before,
+    .menu-btn__stripe::after {
         transition-duration: .3s;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1366px) {
+    .wrapper {
+        width: 68.0%;
+    }
+
+    .header {
+        margin-bottom: 85px;
+    }
+
+    .logo__circle {
+        transform: translateY(-57%);
+    }
+
+    .menu {
+        padding: 7px 4px 0 0;
+    }
+
+    .menu__item {
+        font: 500 14px/16px 'roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .main {
+        padding: 0 55% 60px 0;
+        background-size: 55%;
+        margin-bottom: 86px;
+    }
+
+    .main__content {
+        padding: 14px 0 0 0;
+    }
+
+    .main__title {
+        margin: 0px 0 40px 0;
+        font: bold 50px/66px 'pt_serifbold', Arial, Helvetica, sans-serif;
+    }
+
+    .main__text {
+        padding: 0px 26px 0 0;
+        font: 500 18px/21px 'roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .main__button {
+        padding: 14px 25px 14px 16px;
+        font: 500 14px/16px 'roboto', Arial, Helvetica, sans-serif;
     }
 }
